@@ -32,8 +32,9 @@ route::get('/', function(){
 //cart
 Route::get('/cart', [FrontEndController::class, 'cart'])->name('cart');
 Route::get('/detail', [FrontEndController::class, 'detail'])->name('detail');
-
-
+Route::get('/checkout', [FrontEndController::class, 'checkout'])->name('checkout');
+Route::get('/signup', [FrontEndController::class, 'signup'])->name('signup');
+Route::get('/signin', [FrontEndController::class, 'signin'])->name('signin');
 
 // Admin
 Route::prefix('admin')->name('admin.')->group(function(){
