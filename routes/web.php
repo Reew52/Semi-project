@@ -15,7 +15,7 @@ use App\Http\Controllers\Admin\OrderDetailController;
 use App\Http\Controllers\Admin\InventoryVouchersController;
 use App\Http\Controllers\Admin\IVDetailController;
 use App\Http\Controllers\User\FrontEndController;
-
+use App\Http\Controllers\User\SignupController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +34,12 @@ Route::get('detail/{id}', [FrontEndController::class, 'detail'])->name('detail')
 Route::get('category', [FrontEndController::class, 'category'])->name('category');
 
 
+
+//signup
+Route::get('/signup', [SignupController::class, 'getRegister'])->name('signup');
+Route::post('/signup', [SignupController::class, 'postRegister']);
+// Route::get('/signin', [FrontEndController::class, 'signin'])->name('signin');
+// Route::post('/signin', [FrontEndController::class, 'signin']);
 
 // Admin
 Route::prefix('admin')->name('admin.')->group(function(){
