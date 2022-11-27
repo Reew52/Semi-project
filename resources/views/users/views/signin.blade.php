@@ -44,8 +44,8 @@
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>
                     <div class="form-group">
-                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign up"/>
-                        <a href="" class="submit-link submit">Sign in</a>
+                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign in"/>
+                        {{-- <a href="" class="submit-link submit">Sign in</a> --}}
                     </div>
                 </form>
             </div>

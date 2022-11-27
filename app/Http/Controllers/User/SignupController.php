@@ -30,7 +30,7 @@ class SignupController extends Controller
 
         $users->user_address = $request->user_address;
 
-        $users->user_password = Hash::make($request->user_password);
+        $users->user_password =$request->user_password;
         $users->ur_id = 2;
         $users->user_status = 1;
         $users->user_createAt = date('Y-m-d H:i:s');
