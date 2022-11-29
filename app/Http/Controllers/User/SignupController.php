@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 
 class SignupController extends Controller
 {
-    // register
+    // sign up 
     public function getRegister()
     {
         return view('users.views.signup');

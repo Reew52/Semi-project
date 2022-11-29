@@ -37,10 +37,10 @@ Route::get('category', [FrontEndController::class, 'category'])->name('category'
 
 
 //signup
-Route::get('/signup', [SignupController::class, 'getRegister'])->name('signup');
-Route::post('/signup', [SignupController::class, 'postRegister']);
-Route::get('/signin', [SigninController::class, 'getSignin'])->name('signin');
-Route::post('/signin', [SigninController::class, 'postSignin']);
+Route::get('/signup', [SignupController::class, 'getRegister'])->name('signup');//dd
+Route::post('/signup', [SignupController::class, 'postRegister']);//dd
+Route::get('/signin', [SigninController::class, 'getSignin'])->name('signin');//dd
+Route::post('/signin', [SigninController::class, 'postSignin']);//dd
 
 // Admin
 Route::prefix('admin')->name('admin.')->group(function(){

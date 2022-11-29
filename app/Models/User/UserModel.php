@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserModel extends Model
 {
+    //usermodel
     public $table ="users";
     public $primaryKey = 'user_id';
     public $fillable = 

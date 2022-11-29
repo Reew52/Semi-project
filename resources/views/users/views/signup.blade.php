@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <div class="main">
+    <div class="main"> <!-- sign up -->
 
         <div class="container">
             
